@@ -48,7 +48,8 @@
 <span>async def <span class="ident">account_closure</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call allows clients to close all their accounts (including virtual-money account). It is assumed that all their accounts (excluding virtual) have no balance left.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_closure : int
         Must be 1
@@ -64,7 +65,8 @@
 <span>async def <span class="ident">account_security</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call manages two-factor account authentication</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_security : int
         Must be 1
@@ -82,7 +84,8 @@
 <span>async def <span class="ident">account_statistics</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Send request to get account statistics</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_statistics : int
         Must be 1
@@ -96,7 +99,8 @@
 <span>async def <span class="ident">active_symbols</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     active_symbols : str
         If you use brief, only a subset of fields will be returned.
@@ -114,7 +118,8 @@
 <span>async def <span class="ident">affiliate_account_add</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call opens a new affiliate account. This call can be used as as sign up endpoint.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_opening_reason : str
         [Optional] Purpose and reason for requesting the account opening.
@@ -176,7 +181,8 @@
 <span>async def <span class="ident">api_token</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call manages API tokens</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     api_token : int
         Must be 1
@@ -198,7 +204,8 @@
 <span>async def <span class="ident">app_delete</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>The request for deleting an application.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     app_delete : int
         Application app_id
@@ -212,7 +219,8 @@
 <span>async def <span class="ident">app_get</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>To get the information of the OAuth application specified by 'app_id'</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     app_get : int
         Application app_id
@@ -226,7 +234,8 @@
 <span>async def <span class="ident">app_list</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>List all of the account's OAuth applications</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     app_list : int
         Must be 1
@@ -240,7 +249,8 @@
 <span>async def <span class="ident">app_markup_details</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve details of <code>app_markup</code> according to criteria specified.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     app_id : int
         [Optional] Specific application app_id to report on.
@@ -272,7 +282,8 @@
 <span>async def <span class="ident">app_register</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Register a new OAuth application</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     app_markup_percentage : Number
         [Optional] Markup to be added to contract prices (as a percentage of contract payout).
@@ -304,7 +315,8 @@
 <span>async def <span class="ident">app_update</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Update a new OAuth application</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     app_markup_percentage : Number
         [Optional] Markup to be added to contract prices (as a percentage of contract payout).
@@ -336,7 +348,8 @@
 <span>async def <span class="ident">asset_index</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve a list of all available underlyings and the corresponding contract types and duration boundaries. If the user is logged in, only the assets available for that user's landing company will be returned.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     asset_index : int
         Must be 1
@@ -352,7 +365,8 @@
 <span>async def <span class="ident">authorize</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Authorize current WebSocket session to act on behalf of the owner of a given token. Must precede requests that need to access client account, for example purchasing and selling contracts or viewing portfolio.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     add_to_login_history : int
         [Optional] Send this when you use api tokens for authorization and want to track activity using login_history call.
@@ -368,7 +382,8 @@
 <span>async def <span class="ident">balance</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Get user account balance</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account : str
         [Optional] If set to all, return the balances of all accounts one by one; if set to current, return the balance of current account; if set as an account id, return the balance of that account.
@@ -386,7 +401,8 @@
 <span>async def <span class="ident">buy</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Buy a Contract</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     buy : str
         Either the ID received from a Price Proposal (proposal call), or 1 if contract buy parameters are passed in the parameters field.
@@ -405,7 +421,8 @@
 <span>async def <span class="ident">buy_contract_for_multiple_accounts</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Buy a Contract for multiple Accounts specified by the <code>tokens</code> parameter. Note, although this is an authorized call, the contract is not bought for the authorized account.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     buy_contract_for_multiple_accounts : str
         Either the ID received from a Price Proposal (proposal call), or 1 if contract buy parameters are passed in the parameters field.
@@ -424,7 +441,8 @@
 <span>async def <span class="ident">cancel</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Cancel contract with contract id</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     cancel : int
         Value should be the contract_id which received from the portfolio call.
@@ -438,7 +456,8 @@
 <span>async def <span class="ident">cashier</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Request the cashier info for the specified type.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     address : str
         [Optional] Address for crypto withdrawal. Only applicable for api type.
@@ -464,7 +483,8 @@
 <span>async def <span class="ident">cashier_payments</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>List pending transactions. This can only be used for crypto transactions.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     cashier_payments : Number
         Must be 1
@@ -484,7 +504,8 @@
 <span>async def <span class="ident">cashier_withdrawal_cancel</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Request for cancelling a withdrawal. This can only be used for crypto transactions.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     cashier_withdrawal_cancel : Number
         Must be 1
@@ -500,7 +521,8 @@
 <span>async def <span class="ident">change_password</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Change Password. Note: This call is only available when authenticated using an OAuth token.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     change_password : Number
         Must be 1
@@ -518,7 +540,8 @@
 <span>async def <span class="ident">contract_update</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Update a contract condition.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     contract_id : int
         Internal unique contract identifier.
@@ -535,7 +558,8 @@
 <span>async def <span class="ident">contract_update_history</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Request for contract update history.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     contract_id : int
         Internal unique contract identifier.
@@ -553,7 +577,8 @@
 <span>async def <span class="ident">contracts_for</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>For a given symbol, get the list of currently available contracts, and the latest barrier and duration limits for each contract.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     contracts_for : str
         The short symbol name (obtained from active_symbols call).
@@ -573,7 +598,8 @@
 <span>async def <span class="ident">copy_start</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Start copy trader bets</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     assets : Any
         [Optional] Used to set assets to be copied. E.x ["frxUSDJPY", "R_50"]
@@ -595,7 +621,8 @@
 <span>async def <span class="ident">copy_stop</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Stop copy trader bets</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     copy_stop : str
         API tokens identifying the accounts which needs not to be copied
@@ -609,7 +636,8 @@
 <span>async def <span class="ident">copytrading_list</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieves a list of active copiers and/or traders for Copy Trading</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     copytrading_list : int
         Must be 1
@@ -623,7 +651,8 @@
 <span>async def <span class="ident">copytrading_statistics</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve performance, trading, risk and copiers statistics of trader.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     copytrading_statistics : int
         Must be 1
@@ -639,7 +668,8 @@
 <span>async def <span class="ident">document_upload</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Request KYC information from client</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     document_format : str
         Document file format
@@ -671,7 +701,8 @@
 <span>async def <span class="ident">economic_calendar</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Specify a currency to receive a list of events related to that specific currency. For example, specifying USD will return a list of USD-related events. If the currency is omitted, you will receive a list for all currencies.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     currency : str
         [Optional] Currency symbol.
@@ -691,7 +722,8 @@
 <span>async def <span class="ident">exchange_rates</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieves the exchange rates from a base currency to all currencies supported by the system.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     base_currency : str
         Base currency (can be obtained from payout_currencies call)
@@ -707,7 +739,8 @@
 <span>async def <span class="ident">forget</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Immediately cancel the real-time stream of messages with a specific ID.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     forget : str
         ID of the real-time stream of messages to cancel.
@@ -721,7 +754,8 @@
 <span>async def <span class="ident">forget_all</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Immediately cancel the real-time streams of messages of given type.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     forget_all : Any
         Cancel all streams by type. The value can be either a single type e.g. "ticks", or an array of multiple types e.g. ["candles", "ticks"].
@@ -735,7 +769,8 @@
 <span>async def <span class="ident">get_account_status</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Get Account Status</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     get_account_status : int
         Must be 1
@@ -749,7 +784,8 @@
 <span>async def <span class="ident">get_financial_assessment</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call gets the financial assessment details. The 'financial assessment' is a questionnaire that clients of certain Landing Companies need to complete, due to regulatory and KYC (know your client) requirements.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     get_financial_assessment : int
         Must be 1
@@ -763,7 +799,8 @@
 <span>async def <span class="ident">get_limits</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Trading and Withdrawal Limits for a given user</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     get_limits : int
         Must be 1
@@ -777,7 +814,8 @@
 <span>async def <span class="ident">get_self_exclusion</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Allows users to exclude themselves from the website for certain periods of time, or to set limits on their trading activities. This facility is a regulatory requirement for certain Landing Companies.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     get_self_exclusion : int
         Must be 1
@@ -791,7 +829,8 @@
 <span>async def <span class="ident">get_settings</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Get User Settings (email, date of birth, address etc)</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     get_settings : int
         Must be 1
@@ -805,7 +844,8 @@
 <span>async def <span class="ident">identity_verification_document_add</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Adds document information such as issuing country, id and type for identity verification processes.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     document_number : str
         The identification number of the document.
@@ -825,7 +865,8 @@
 <span>async def <span class="ident">landing_company</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies. This call will return the appropriate Landing Company for clients of a given country. The landing company may differ for Gaming contracts (Synthetic Indices) and Financial contracts (Forex, Stock Indices, Commodities).</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     landing_company : str
         Client's 2-letter country code (obtained from residence_list call).
@@ -839,7 +880,8 @@
 <span>async def <span class="ident">landing_company_details</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group). This call provides information about each Landing Company.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     landing_company_details : str
         Landing company shortcode.
@@ -853,7 +895,8 @@
 <span>async def <span class="ident">link_wallet</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Link a wallet to a trading app.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     client_id : str
         The unique identifier for this trading account.
@@ -871,7 +914,8 @@
 <span>async def <span class="ident">login_history</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve a summary of login history for user.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     limit : int
         [Optional] Apply limit to count of login history records.
@@ -887,7 +931,8 @@
 <span>async def <span class="ident">logout</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Logout the session</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     logout : int
         Must be 1
@@ -901,7 +946,8 @@
 <span>async def <span class="ident">mt5_deposit</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call allows deposit into MT5 account from Binary account.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     amount : Number
         Amount to deposit (in the currency of from_binary); min = $1 or an equivalent amount, max = $20000 or an equivalent amount
@@ -921,7 +967,8 @@
 <span>async def <span class="ident">mt5_get_settings</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Get MT5 user account settings</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     login : str
         MT5 user login
@@ -937,7 +984,8 @@
 <span>async def <span class="ident">mt5_login_list</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Get list of MT5 accounts for client</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     mt5_login_list : int
         Must be 1
@@ -951,7 +999,8 @@
 <span>async def <span class="ident">mt5_new_account</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call creates new MT5 user, either demo or real money user.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_type : str
         Account type. If set to 'financial', setting 'mt5_account_type' is also required.
@@ -1003,7 +1052,8 @@
 <span>async def <span class="ident">mt5_password_change</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>To change passwords of the MT5 account.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     login : str
         MT5 user login
@@ -1025,7 +1075,8 @@
 <span>async def <span class="ident">mt5_password_check</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call validates the main password for the MT5 user</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     login : str
         MT5 user login
@@ -1045,7 +1096,8 @@
 <span>async def <span class="ident">mt5_password_reset</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>To reset the password of MT5 account.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     login : str
         MT5 user login
@@ -1067,7 +1119,8 @@
 <span>async def <span class="ident">mt5_withdrawal</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call allows withdrawal from MT5 account to Binary account.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     amount : Number
         Amount to withdraw (in the currency of the MT5 account); min = $1 or an equivalent amount, max = $20000 or an equivalent amount.
@@ -1087,7 +1140,8 @@
 <span>async def <span class="ident">new_account_maltainvest</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call opens a new real-money account with the <code>maltainvest</code> Landing Company. This call can be made from a virtual-money account or real-money account at Deriv (Europe) Limited. If it is the latter, client information fields in this call will be ignored and data from your existing real-money account will be used.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     accept_risk : int
         Show whether client has accepted risk disclaimer.
@@ -1179,7 +1233,8 @@
 <span>async def <span class="ident">new_account_real</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call opens a new real-money account. This call can be made from a virtual-money or a real-money account. If it is the latter, client information fields in this call will be ignored and data from your existing real-money account will be used.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_opening_reason : str
         [Optional] Purpose and reason for requesting the account opening.
@@ -1239,7 +1294,8 @@
 <span>async def <span class="ident">new_account_virtual</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Create a new virtual-money account.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     affiliate_token : str
         [Optional] Affiliate token, within 32 characters.
@@ -1295,7 +1351,8 @@
 <span>async def <span class="ident">new_account_wallet</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Create a new account real-money wallet account.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     address_city : str
         [Optional] Within 35 characters.
@@ -1333,7 +1390,8 @@
 <span>async def <span class="ident">notification_event</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Notify the backend about a specific event.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     args : Any
     category : str
@@ -1352,7 +1410,8 @@
 <span>async def <span class="ident">oauth_apps</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>List all my used OAuth applications.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     oauth_apps : int
         Must be 1
@@ -1366,7 +1425,8 @@
 <span>async def <span class="ident">p2p_advert_create</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Creates a P2P (Peer to Peer) advert. Can only be used by an approved P2P advertiser. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     amount : Number
         The total amount of the advert, in advertiser's account currency.
@@ -1402,7 +1462,8 @@
 <span>async def <span class="ident">p2p_advert_info</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve information about a P2P advert. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     id : str
         [Optional] The unique identifier for this advert. Optional when subscribe is 1. If not provided, all advertiser adverts will be subscribed.
@@ -1422,7 +1483,8 @@
 <span>async def <span class="ident">p2p_advert_list</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Returns available adverts for use with <code>p2p_order_create</code>. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     advertiser_id : str
         [Optional] ID of the advertiser to list adverts for.
@@ -1458,7 +1520,8 @@
 <span>async def <span class="ident">p2p_advert_update</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Updates a P2P advert. Can only be used by the advertiser. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     delete : int
         [Optional] If set to 1, permanently deletes the advert.
@@ -1482,7 +1545,8 @@
 <span>async def <span class="ident">p2p_advertiser_adverts</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Returns all P2P adverts created by the authorized client. Can only be used by a registered P2P advertiser. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     limit : int
         [Optional] Used for paging. This value will also apply to subsription responses.
@@ -1500,7 +1564,8 @@
 <span>async def <span class="ident">p2p_advertiser_create</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Registers the client as a P2P advertiser. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     contact_info : str
         [Optional] Advertiser's contact information, to be used as a default for new sell adverts.
@@ -1524,7 +1589,8 @@
 <span>async def <span class="ident">p2p_advertiser_info</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve information about a P2P advertiser. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     id : str
         [Optional] The unique identifier for this advertiser. If not provided, returns advertiser information about the current account.
@@ -1542,7 +1608,8 @@
 <span>async def <span class="ident">p2p_advertiser_payment_methods</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Manage or list P2P advertiser payment methods.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     create : Any
         Contains new payment method entries.
@@ -1562,7 +1629,8 @@
 <span>async def <span class="ident">p2p_advertiser_relations</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Updates and returns favourite and blocked advertisers of the current user.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     add_blocked : Any
         IDs of advertisers to block.
@@ -1584,7 +1652,8 @@
 <span>async def <span class="ident">p2p_advertiser_update</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Update the information of the P2P advertiser for the current account. Can only be used by an approved P2P advertiser. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     contact_info : str
         [Optional] Advertiser's contact information, to be used as a default for new sell adverts.
@@ -1608,7 +1677,8 @@
 <span>async def <span class="ident">p2p_chat_create</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Creates a P2P chat for the specified order. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     order_id : str
         The unique identifier for the order to create the chat for.
@@ -1624,7 +1694,8 @@
 <span>async def <span class="ident">p2p_order_cancel</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Cancel a P2P order. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     id : str
         The unique identifier for this order.
@@ -1640,7 +1711,8 @@
 <span>async def <span class="ident">p2p_order_confirm</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Confirm a P2P order. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     id : str
         The unique identifier for this order.
@@ -1656,7 +1728,8 @@
 <span>async def <span class="ident">p2p_order_create</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Creates a P2P order for the specified advert. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     advert_id : str
         The unique identifier for the advert to create an order against.
@@ -1682,7 +1755,8 @@
 <span>async def <span class="ident">p2p_order_dispute</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Dispute a P2P order. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     dispute_reason : str
         The predefined dispute reason
@@ -1700,7 +1774,8 @@
 <span>async def <span class="ident">p2p_order_info</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieves the information about a P2P order. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     id : str
         The unique identifier for the order.
@@ -1718,7 +1793,8 @@
 <span>async def <span class="ident">p2p_order_list</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>List active orders. <strong>This API call is still in Beta.</strong></p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     active : Number
         [Optional] Should be 1 to list active, 0 to list inactive (historical).
@@ -1742,7 +1818,8 @@
 <span>async def <span class="ident">p2p_payment_methods</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>List all P2P payment methods.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     p2p_payment_methods : int
         Must be 1
@@ -1756,7 +1833,8 @@
 <span>async def <span class="ident">payment_methods</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Will return a list payment methods available for the given country. If the request is authenticated the client's residence country will be used.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     country : str
         [Optional] 2-letter country code (ISO standard).
@@ -1772,7 +1850,8 @@
 <span>async def <span class="ident">paymentagent_create</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Saves client's payment agent details.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     affiliate_id : str
         [Optional] Client's My Affiliate id, if exists.
@@ -1806,7 +1885,8 @@
 <span>async def <span class="ident">paymentagent_details</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Gets client's payment agent details.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -1820,7 +1900,8 @@
 <span>async def <span class="ident">paymentagent_list</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Will return a list of Payment Agents for a given country for a given currency. Payment agents allow users to deposit and withdraw funds using local payment methods that might not be available via the main website's cashier system.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     currency : str
         [Optional] If specified, only payment agents that supports that currency will be returned (obtained from payout_currencies call).
@@ -1836,7 +1917,8 @@
 <span>async def <span class="ident">paymentagent_transfer</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Payment Agent Transfer - this call is available only to accounts that are approved Payment Agents.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     amount : Number
         The amount to transfer.
@@ -1860,7 +1942,8 @@
 <span>async def <span class="ident">paymentagent_withdraw</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Initiate a withdrawal to an approved Payment Agent.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     amount : Number
         The amount to withdraw to the payment agent.
@@ -1886,7 +1969,8 @@
 <span>async def <span class="ident">payout_currencies</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve a list of available option payout currencies. If a user is logged in, only the currencies available for the account will be returned.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -1900,7 +1984,8 @@
 <span>async def <span class="ident">ping</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>To send the ping request to the server. Mostly used to test the connection or to keep it alive.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -1914,7 +1999,8 @@
 <span>async def <span class="ident">portfolio</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Receive information about my current portfolio of outstanding options</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     contract_type : Any
         Return only contracts of the specified types
@@ -1930,7 +2016,8 @@
 <span>async def <span class="ident">profit_table</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve a summary of account Profit Table, according to given search criteria</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     contract_type : Any
         Return only contracts of the specified types
@@ -1958,7 +2045,8 @@
 <span>async def <span class="ident">proposal</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Gets latest price for a specific contract.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     amount : Number
         [Optional] Proposed contract payout or stake, or multiplier (for lookbacks).
@@ -2007,7 +2095,8 @@
 <span>async def <span class="ident">proposal_open_contract</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Get latest price (and other information) for a contract in the user's portfolio</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     contract_id : int
         [Optional] Contract ID received from a portfolio request. If not set, you will receive stream of all open contracts.
@@ -2025,7 +2114,8 @@
 <span>async def <span class="ident">reality_check</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve summary of client's trades and account for the Reality Check facility. A 'reality check' means a display of time elapsed since the session began, and associated client profit/loss. The Reality Check facility is a regulatory requirement for certain landing companies.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2039,7 +2129,8 @@
 <span>async def <span class="ident">request_report</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Send report to client's registered e-mail</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     date_from : int
         Start date of the report
@@ -2059,7 +2150,8 @@
 <span>async def <span class="ident">reset_password</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Reset Password.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     date_of_birth : str
         [Optional] Date of birth format: yyyy-mm-dd. Only required for clients with real-money accounts.
@@ -2079,7 +2171,8 @@
 <span>async def <span class="ident">residence_list</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call returns a list of countries and 2-letter country codes, suitable for populating the account opening form.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2093,7 +2186,8 @@
 <span>async def <span class="ident">revoke_oauth_app</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Used for revoking access of particular app.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2107,7 +2201,8 @@
 <span>async def <span class="ident">sell</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Sell a Contract as identified from a previous <code>portfolio</code> call.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2123,7 +2218,8 @@
 <span>async def <span class="ident">sell_contract_for_multiple_accounts</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Sell contracts for multiple accounts simultaneously. Uses the shortcode response from <code>buy_contract_for_multiple_accounts</code> to identify the contract, and authorisation tokens to select which accounts to sell those contracts on. Note that only the accounts identified by the tokens will be affected. This will not sell the contract on the currently-authorised account unless you include the token for the current account.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2143,7 +2239,8 @@
 <span>async def <span class="ident">sell_expired</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call will try to sell any expired contracts and return the number of sold contracts.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2157,7 +2254,8 @@
 <span>async def <span class="ident">service_token</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieves the authorization token for the specified service.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     country : str
         [Optional] The 2-letter country code.
@@ -2179,7 +2277,8 @@
 <span>async def <span class="ident">set_account_currency</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Set account currency, this will be default currency for your account i.e currency for trading, deposit. Please note that account currency can only be set once, and then can never be changed.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2193,7 +2292,8 @@
 <span>async def <span class="ident">set_financial_assessment</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call sets the financial assessment details based on the client's answers to analyze whether they possess the experience and knowledge to understand the risks involved with binary options trading.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_turnover : str
         [Optional] The anticipated account turnover.
@@ -2241,7 +2341,8 @@
 <span>async def <span class="ident">set_self_exclusion</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Set Self-Exclusion (this call should be used in conjunction with <code>get_self_exclusion</code>)</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     exclude_until : Any
         [Optional] Exclude me from the website (for a minimum of 6 months, up to a maximum of 5 years). Note: uplifting this self-exclusion may require contacting the company.
@@ -2283,7 +2384,8 @@
 <span>async def <span class="ident">set_settings</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Set User Settings (this call should be used in conjunction with <code>get_settings</code>)</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_opening_reason : str
         [Optional] Purpose and reason for requesting the account opening. Only applicable for real money account. Required for clients that have not set it yet. Can only be set once.
@@ -2344,7 +2446,8 @@
 <span>async def <span class="ident">statement</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve a summary of account transactions, according to given search criteria</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     action_type : str
         [Optional] To filter the statement according to the type of transaction.
@@ -2370,7 +2473,8 @@
 <span>async def <span class="ident">states_list</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>For a given country, returns a list of States of that country. This is useful to populate the account opening form.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2384,7 +2488,8 @@
 <span>async def <span class="ident">ticks</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Initiate a continuous stream of spot price updates for a given symbol.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2400,23 +2505,24 @@
 <span>async def <span class="ident">ticks_history</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters</h2>
-<hr>
-<pre><code>args : dict with following keys
-    adjust_start_time : int
-        [Optional] 1 - if the market is closed at the end time, or license limit is before end time, adjust interval backwards to compensate.
-    count : int
-        [Optional] An upper limit on ticks to receive.
-    end : str
-        Epoch value representing the latest boundary of the returned ticks. If latest is specified, this will be the latest available timestamp.
-    granularity : int
-        [Optional] Only applicable for style: candles. Candle time-dimension width setting. (default: 60).
-    passthrough : Any
-        [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
-    req_id : int
-        [Optional] Used to map request to response.
-    start : int
-        [Optional] Epoch value representing the earliest boundary of the returned ticks.
+<div class="desc"><p>Get historic tick data for a given symbol.</p>
+<pre><code>    Parameters:
+    -----------
+        args : dict with following keys
+            adjust_start_time : int
+                [Optional] 1 - if the market is closed at the end time, or license limit is before end time, adjust interval backwards to compensate.
+            count : int
+                [Optional] An upper limit on ticks to receive.
+            end : str
+                Epoch value representing the latest boundary of the returned ticks. If latest is specified, this will be the latest available timestamp.
+            granularity : int
+                [Optional] Only applicable for style: candles. Candle time-dimension width setting. (default: 60).
+            passthrough : Any
+                [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
+            req_id : int
+                [Optional] Used to map request to response.
+            start : int
+                [Optional] Epoch value representing the earliest boundary of the returned ticks.
 </code></pre>
 <ul>
 <li>For "style": "ticks": this will default to 1 day ago.</li>
@@ -2433,7 +2539,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">time</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Request back-end server epoch time.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2447,7 +2554,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">tnc_approval</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>To approve the latest version of terms and conditions.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     affiliate_coc_agreement : int
         [Optional] For Affiliate's Code of Conduct Agreement.
@@ -2465,7 +2573,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">topup_virtual</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>When a virtual-money's account balance becomes low, it can be topped up using this call.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2479,7 +2588,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">trading_durations</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Retrieve a list of all available underlyings and the corresponding contract types and trading duration boundaries. If the user is logged in, only the assets available for that user's landing company will be returned.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     landing_company : str
         [Optional] If specified, will return only the underlyings for the specified landing company.
@@ -2495,7 +2605,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">trading_platform_accounts</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Get list of Trading Platform accounts for client</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2511,7 +2622,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">trading_platform_deposit</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Deposit funds from wallet account to trading platform account</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     amount : Number
         Amount to deposit (in the currency of from_wallet).
@@ -2533,7 +2645,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">trading_platform_investor_password_change</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Change the Trading Platform investor password</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_id : str
         Trading account ID.
@@ -2555,7 +2668,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">trading_platform_investor_password_reset</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Reset the investor password of a Trading Platform Account</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_id : str
         Trading account ID.
@@ -2577,7 +2691,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">trading_platform_new_account</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call creates new Trading account, either demo or real money.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_type : str
         Account type.
@@ -2605,7 +2720,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">trading_platform_password_change</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Change the Trading Platform password</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     new_password : str
         New trading password. Accepts any printable ASCII character. Must be within 8-25 characters, and include numbers, lowercase and uppercase letters. Must not be the same as the user's email address.
@@ -2625,7 +2741,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">trading_platform_password_reset</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Reset the password of a Trading Platform Account</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     new_password : str
         New password of the account. For validation (Accepts any printable ASCII character. Must be within 8-25 characters, and include numbers, lowercase and uppercase letters. Must not be the same as the user's email address).
@@ -2645,7 +2762,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">trading_platform_withdrawal</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call allows withdrawal from Trading account to a wallet account.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     amount : Number
         Amount to withdraw (in the currency of the Trading account).
@@ -2667,7 +2785,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">trading_servers</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Get the list of servers for a trading platform.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_type : str
         [Optional] Trading account type.
@@ -2689,7 +2808,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">trading_times</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Receive a list of market opening times for a given date.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2703,7 +2823,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">transaction</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Subscribe to transaction notifications</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2719,7 +2840,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">transfer_between_accounts</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>This call allows transfers between accounts held by a given user. Transfer funds between your fiat and cryptocurrency accounts (for a fee). Please note that account_from should be same as current authorized account.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     account_from : str
         [Optional] The loginid of the account to transfer funds from.
@@ -2743,7 +2865,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">verify_email</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Verify an email address for various purposes. The system will send an email to the address containing a security code for verification.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.
@@ -2760,7 +2883,8 @@ Short symbol name (obtained from the active_symbols call).</li>
 <span>async def <span class="ident">website_status</span></span>(<span>self, args=None)</span>
 </code></dt>
 <dd>
-<div class="desc"><h2 id="parameters">Parameters:</h2>
+<div class="desc"><p>Request server status.</p>
+<h2 id="parameters">Parameters:</h2>
 <pre><code>args : dict with following keys
     passthrough : Any
         [Optional] Used to pass data through the websocket, which may be retrieved via the echo_req output field.

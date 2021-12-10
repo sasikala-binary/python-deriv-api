@@ -45,12 +45,12 @@ object (See the params).</p>
 <ul>
 <li>Read the latest active symbols</li>
 </ul>
-<pre><code class="language-python-repl">&gt;&gt;&gt; symbols = await api.activeSymbols();
+<pre><code class="language-python-repl">&gt;&gt;&gt; symbols = await api.active_symbols()
 </code></pre>
 <ul>
 <li>Read the data from cache if available</li>
 </ul>
-<pre><code class="language-python-repl">&gt;&gt;&gt; cached_symbols = await api.cache.activeSymbols();
+<pre><code class="language-python-repl">&gt;&gt;&gt; cached_symbols = await api.cache.active_symbols()
 </code></pre>
 <h2 id="parameters">Parameters</h2>
 <pre><code>api : deriv_api.DerivAPI

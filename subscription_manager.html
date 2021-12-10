@@ -52,6 +52,7 @@ drop/account changed.</p>
 <pre><code class="language-python-repl">&gt;&gt;&gt; source_tick_50: Observable  = await api.subscribe({'ticks': 'R_50'})
 &gt;&gt;&gt; subscription_id = 0
 &gt;&gt;&gt; def tick_50_callback(data):
+&gt;&gt;&gt;     global subscription_id
 &gt;&gt;&gt;     subscription_id = data['subscription']['id']
 &gt;&gt;&gt;     print(data)
 &gt;&gt;&gt; source_tick_50.subscribe(tick_50_callback)
@@ -78,9 +79,11 @@ Errors should be handled by the user of the stream</p>
 <pre><code class="language-python-repl">&gt;&gt;&gt; ticks = api.subscribe({ 'ticks': 'R_100' })
 &gt;&gt;&gt; ticks.subscribe(call_back_function)
 </code></pre>
-<h2 id="parameter">Parameter</h2>
-<p>request : dict
-A request object acceptable by the API</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>request</code></strong> :&ensp;<code>dict</code></dt>
+<dd>A request object acceptable by the API</dd>
+</dl>
 <h2 id="returns">Returns</h2>
 <pre><code>Observable
     An RxPY SObservable
